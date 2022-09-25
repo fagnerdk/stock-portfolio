@@ -122,4 +122,4 @@ function myfunction(){
        
     };
 };*/
-alert("atenção este site esta desenvolvendo ")
+alert("atenção este site esta sendo desenvolvendo ")
