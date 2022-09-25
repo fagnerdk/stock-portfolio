@@ -47,7 +47,7 @@ table{
 #lp{ 
     background-color: rgb(255, 0, 128);
     /*border: 1px solid black; */
-    margin-top: -240px;
+    margin-top: -260px;
     margin-left: 689px;
     height: 482px;
     width: 641px;
@@ -55,7 +55,7 @@ table{
 }
 .pr{
     background-color: rgb(153, 0, 255);
-    margin-top: -386px;
+    margin-top: -406px;
     margin-left: 689px;
     width: 180px;
     height: 44px;
@@ -67,10 +67,14 @@ table{
 .cs{
     background-color: aqua;
     border: 1px solid rgb(22, 24, 23); 
-    margin-left: -6px;
-    margin-top: -242px;
+    margin-left: -5px;
+    margin-top: -222px;
     height: 180px;
     width: 324px;
+}
+#cs{
+  margin-left: 5px;
+  font-size: medium;
 }
 .ms{
     background-color: blueviolet;
