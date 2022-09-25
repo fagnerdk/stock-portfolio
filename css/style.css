@@ -1,0 +1,215 @@
+/*nav*/
+nav{
+    background-color: rgb(99, 42, 165);
+    color: aliceblue; 
+    padding: 20px;
+    margin-top: -90px;
+    margin-left: -6px;
+}
+.titulo{
+   /*background-color: darkgrey;*/
+    color: beige;
+    margin-top: 90px;
+   text-align: center ;
+   font-size: 20px;
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+}
+#contenia1-pesquiça{
+    margin-top: -50px;
+    margin-left: 400px;
+    padding: 8px;
+    width: 150px;
+    background-color: rgba(196, 214, 214, 0.397);
+    border-radius: 3px;
+}
+#bt0{
+    border: papayawhip;
+    border-radius: .3rem;
+}
+#pesquisar{
+    text-align: center;
+    border-radius: 30px;
+    width: 115px;
+    border: 0mm;
+}
+/**/
+
+table{
+    width: 695px;
+}
+.contenia{
+   /*background-color: black;*/
+    width: 695px;
+    margin-left: -6px;
+}
+#lp{ 
+    background-color: rgb(255, 0, 128);
+    /*border: 1px solid black; */
+    margin-top: -240px;
+    margin-left: 689px;
+    height: 482px;
+    width: 641px;
+    text-align: left -182px;
+}
+.pr{
+    background-color: rgb(153, 0, 255);
+    margin-top: -386px;
+    margin-left: 689px;
+    width: 180px;
+    height: 44px;
+}
+#disponivel{
+    margin: 5px;
+    
+}
+.cs{
+    background-color: aqua;
+    border: 1px solid rgb(22, 24, 23); 
+    margin-left: -6px;
+    margin-top: -242px;
+    height: 180px;
+    width: 324px;
+}
+.ms{
+    background-color: blueviolet;
+    border: 1px solid black;
+    width: 201px;
+    height: 180px;
+    margin-top: -182px;
+    margin-left: 321px;
+}
+.cx{
+    background-color: rgb(7, 163, 20);
+    border: 1px solid black;
+    width: 90px;
+    height: 57px;
+    margin-top: -182px;
+    margin-left: 525px;
+}
+.total{
+    background-color: rgb(8, 10, 12);
+    border: 1px solid black;
+    width: 68px;
+    height: 57px;
+    margin-top: -59px;
+    margin-left: 618px;
+}  
+.table, th, td {
+    border:1px solid black;
+    text-align: center;
+   
+}
+.data{
+    background-color: dimgray;
+}
+.pl{
+    background-color: rgb(236, 224, 53);
+} 
+.qld{
+    background-color: fuchsia;
+}
+.dive{
+    background-color: brown;
+}
+.rs{
+   background-color: darkgreen;
+}
+.dy{
+    background-color: darkgoldenrod;
+}
+.vl{
+  background-color: darkred;
+}
+.fi{
+    background-color: chartreuse;
+}
+input{
+    width: 50px;
+    
+    
+}
+#mynome{
+    width: 100px;
+}
+#bt1{
+    background-color: rgb(200, 255, 0);
+    border-radius: 20px;
+    padding: 9px;
+    margin-top: 5px;
+    margin-left: 640px;
+}
+#dividendo{
+    margin-left: .50rem;
+    margin-top: .50rem;
+}
+.valo-dv{
+    margin-top: -20px;
+    margin-left: 140px;
+    width: 40px;
+    height: auto;
+    background-color: aliceblue;
+    text-align: center;
+    height: 20px;
+     
+}
+#ano{
+    margin-left: .50rem;
+    margin-top: .50rem;
+}
+#ano1{
+    margin-top: -20px;
+    margin-left: 140px;
+    width: 40px;
+    height: auto;
+    background-color: aliceblue;
+    text-align: center;
+}
+#total{
+    margin-left: 68px;
+    margin-top: .50rem;
+    font-size: 20px;
+}
+#final{
+    margin-top: -20px;
+    margin-left: 140px;
+    width: 40px;
+    height: auto;
+    background-color: aliceblue;
+    text-align: center;
+   
+}
+footer{
+    background-color:#632AA5 ;
+    margin-top: 500px;
+    margin-left: -8px;
+  padding: 40px;
+}
+.dt1{
+    margin-left: 90px;
+}
+#caixa{
+  /*background-color: #632AA5;*/
+  width: 3px;
+  margin-left: 80px;
+}
+#caixad{
+    /*background-color: #632AA5;*/
+    width: 3px;
+    margin-left: 45px;
+}
+#soma_totau{
+    color: rgb(15, 238, 15);
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 6px;
+    
+}
+#menos_soma{
+    color: rgb(255, 5, 5);
+    margin-top: 6px;
+    margin-left: 6px;
+    text-align: center;
+   
+}
