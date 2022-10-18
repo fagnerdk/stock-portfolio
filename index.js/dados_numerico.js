@@ -1,7 +1,7 @@
 function mybt(){
     var pesquisa = document.getElementById("pesquisar").value;//barra de pesquisa
     document.getElementById("cs").innerText = pesquisa;//barra de pesquisa
-}
+};
 
 var valo_ct = ['corta0',"corta1","corta2","corta3","corta4","corta5","corta6","corta7","corta8","corta9","corta10"]
  valo_ct = ["","","","","","","","","",""]
@@ -108,7 +108,7 @@ function myfunction(){
    
   
 
-}
+};
 
 /*function mycheckid(){
     var z = document.getElementById("caixa3");
@@ -121,5 +121,6 @@ function myfunction(){
     else {
        
     };
+    console.log(z)
 };*/
 alert("atenção este site esta sendo desenvolvendo ")
