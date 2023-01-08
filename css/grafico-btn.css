@@ -1,6 +1,8 @@
 #n{
     background-color: black;
     height: 43px;
+    border: 90px;
+    
 }
 #bt_gra{
     background-color: rgb(191, 191, 194);
@@ -28,6 +30,35 @@
 }
 .jn1:hover,.jn2:hover{
     background-color: aquamarine;
+}
+#vn{
+    color: rgb(10, 14, 17);
+    background-color: rgb(251, 255, 0); 
+    height: 20px;
+    width: 35px;
+    margin-left: 10px;
+    text-align: center;
+   margin-top: -6px;
+   position: relative;
+   animation-delay: 500s;
+   animation: mymove 10s infinite;
+}
+#vn1{
+    color: rgb(10, 14, 17);
+    background-color: rgb(255, 0, 0); 
+    height: 20px;
+    width: 35px;
+    margin-left: 50px;
+    margin-top: -20px;
+    text-align: center;
+    position: relative;
+    animation-delay: 500s;
+    animation: mymove 10s infinite;
+}
+#vn,#vn1{animation-timing-function: linear;}
+@keyframes mymove {
+  from {left: -10px;}
+  to {left: 470px;}
 }
 .video{
    /* background-color: rgb(153, 0, 255);*/
