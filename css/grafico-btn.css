@@ -1,0 +1,47 @@
+#n{
+    background-color: black;
+    height: 43px;
+}
+#bt_gra{
+    background-color: rgb(191, 191, 194);
+    height: 435px;
+    width: 90px;
+  border: 1px solid rgb(65, 60, 60);
+}
+#jonal{
+   text-align: center;
+}
+.jn1{
+   /* background-color: bisque;*/
+    margin-left: 5px;
+   width: 80px;
+   text-align: center;
+   cursor: pointer;
+}
+.jn2{
+    /* background-color: bisque;*/
+    margin-top: 9px;
+    margin-left: 5px;
+   width: 80px;
+   text-align: center;
+   cursor: pointer;
+}
+.jn1:hover,.jn2:hover{
+    background-color: aquamarine;
+}
+.video{
+   /* background-color: rgb(153, 0, 255);*/
+    margin-top: -435px;
+    margin-left: 5.8rem;
+    width: 466px;
+    height: 435px;
+}
+.yuo_tube{
+    /*background-color: rgb(255, 0, 43);*/
+    width: 466px;
+    height: 435px
+}
+#myChart{
+    width: 106px;
+    height: 425px;
+}

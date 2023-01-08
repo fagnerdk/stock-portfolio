@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stock portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grafico-btn.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body >
     
+   <!--cabessa-->
     <nav class="tl">
      
-      <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div>
+     <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div>
+
       <div id="contenia1-pesquiça">
         <label for="pesquisar"></label>
         <input type="url" name="" id="pesquisar">
         <button onclick="mybt()" id="bt0">ok</button>
       </div>
-    
-        
-    </nav>  
- <div class="contenia" >
+
+    </nav>
+ <!--corpoo-->
+  <div class="contenia">
+
     <form action="" method="post">
      <table >
         <tr>
-          <th class="data">Data <input type="date" name="mydata" id="mydata"></th>
+          <th class="data" id="bts"></th>
+          <th class="data">Data <input type="date" name="mydata" id="mydata" ></th>
           <th class="pl">PL<input type="text" name="mynome"id='mynome'></th>
           <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th>
     </form>      
@@ -36,119 +41,139 @@
           <th class="fi" >Finaceiro</th>
         </tr>
         <tr>
-          <td class="data" id="data1"><div id="caixad"><input  type="checkbox" name="" id="caixa0"  value=""></div></td>
-          <td class="pl" id="pl1"><div id="caixa"><input  type="checkbox" name="" id="caixa1"></div></td>
-          <td class="qld" id="qtd0"></td>
-          <td class="dive" id="dy"></td>
+          <td class="data" id="btss" onclick="my1()">1</td>
+          <td class="data" id="data1"></td>
+          <td class="pl" id="pl1"></td>
+          <td class="qld" id="qtd1"></td>
+          <td class="dive" id="dy">0,00</td>
           <td class="rs" id="" >0,00</td>
           <td class="dy" id="">1,45%</td>
-          <td class="vl"id="corta0">R$ 0,00</td>
+          <td class="vl"id="corta1">R$ 0,00</td>
           <td class="fi" id="pvl0" >R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl" ></p><div id="caixa"><input  type="checkbox" name="" id="caixa9" ></div></td>
-          <td class="qld">1</td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta1">R$ 0,00</td>
-          <td class="fi" id="pvl1">R$ 0,00</td>
-        </tr>
-        <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my2()">2</td>
+          <td class="data" id="data2"></td>
+          <td class="pl" id="pl2"></td>
+          <td class="qld" id="qtd2"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta2">R$ 0,00</td>
-          <td class="fi" id="pvl2">R$ 0,00</td>
+          <td class="fi" id="pvl1">R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my3()">3</td>
+          <td class="data" id="data3"></td>
+          <td class="pl" id="pl3"></td>
+          <td class="qld" id="qtd3"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta3">R$ 0,00</td>
-          <td class="fi" id="pvl3">R$ 0,00</td>
+          <td class="fi" id="pvl2">R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my4()">4</td>
+          <td class="data" id="data4"></td>
+          <td class="pl" id="pl4"></td>
+          <td class="qld" id="qtd4"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta4">R$ 0,00</td>
-          <td class="fi" id="pvl4">R$ 0,00</td>
+          <td class="fi" id="pvl3">R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my5()">5</td>
+          <td class="data" id="data5"></td>
+          <td class="pl"  id="pl5"></td>
+          <td class="qld" id="qtd5"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta5">R$ 0,00</td>
-          <td class="fi" id="pvl5">R$ 0,00</td>
+          <td class="fi" id="pvl4">R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my6()">6</td>
+          <td class="data" id="data6"></td>
+          <td class="pl" id="pl6"></td>
+          <td class="qld" id="qtd6"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta6">R$ 0,00</td>
-          <td class="fi" id="pvl6">R$ 0,00</td>
+          <td class="fi" id="pvl5">R$ 0,00</td>
         </tr>
         <tr>
-  
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>      
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my7()">7</td>
+          <td class="data" id="data7"></td>
+          <td class="pl" id="pl7"></td>
+          <td class="qld" id="qtd7"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta7">R$ 0,00</td>
-          <td class="fi" id="pvl7">R$ 0,00</td>
+          <td class="fi" id="pvl6">R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my8()">8</td>
+          <td class="data" id="data8"></td>      
+          <td class="pl" id="pl8"></td>
+          <td class="qld" id="qtd8"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta8">R$ 0,00</td>
-          <td class="fi" id="pvl8">R$ 0,00</td>
+          <td class="fi" id="pvl7">R$ 0,00</td>
         </tr>
         <tr>
-          <td class="data"><div id="caixad"><input  type="checkbox" name="" id="caixa0" ></div></td>
-          <td class="pl"><div id="caixa"><input  type="checkbox" name="" id="caixa1" ></div></td>
-          <td class="qld">1</td>
+          <td class="data" id="btss" onclick="my9()">9</td>
+          <td class="data" id="data9"></td>
+          <td class="pl" id="pl9"></td>
+          <td class="qld" id="qtd9"></td>
           <td class="dive">0,00</td>
           <td class="rs">0,00</td>
           <td class="dy">1,45%</td>
           <td class="vl" id="corta9">R$ 0,00</td>
+          <td class="fi" id="pvl8">R$ 0,00</td>
+        </tr>
+        <tr>
+          <td class="data" id="btss" onclick="my10()">10</td>
+          <td class="data" id="data10"></td>
+          <td class="pl" id="pl10"></td>
+          <td class="qld" id="qtd10"></td>
+          <td class="dive">0,00</td>
+          <td class="rs">0,00</td>
+          <td class="dy">1,45%</td>
+          <td class="vl" id="corta10">R$ 0,00</td>
           <td class="fi" id="pvl9">R$ 0,00</td>
         </tr>
       </table>
-      
-    
+</div>
+ 
+ <!--grafico-->
+ <div id="lp">
+   <div id="n"></div>
+
+   <div id="bt_gra">
+    <div id="jonal"><h1 style="font-size: 20px;">noticias</h1></div>
+    <div onclick="myvolta()" class="jn1"> JN NEWS</div>
+    <div onclick=" Cultura()" class="jn2">JN Cultura</div>
+    <div onclick="grafico()" class="jn2">grafico</div>
+     
+   </div>
+   <div class="video"><iframe src="" class="yuo_tube" id="yuo_tube" frameborder="0"></iframe></div>
+   <div class="video"><div id="myChart" style="width:100%;max-width:700px"></div></div>
  </div>
  
- <div id="lp">
-  
- </div>
-  
+   <!--caixa azul-->
   <div class="cs" >
     <div id="cs"></div>
     
   </div>
+  <!--valores caixa-->
   <div class="ms">
     <form action="" method="post">
 
@@ -163,16 +188,18 @@
         <input type="number" name="" id="#" min="0">
      </div>
        <div class=""><p id="ano1">89</p></div>
-
-      <label for="" id="total">total</label>
+       <label for="" id="total">total</label>
       <div class="#"><p id="final">8</p></div>
+     
 
     </form>
   </div>
+    <!--caixa verde-->
   <div class="cx">
-
+    
 
   </div>
+   <!--somas dos valores-->
   <div class="total">
    
     <div id="soma_totau">0,00</div>
@@ -180,13 +207,15 @@
     <div id="menos_soma">0,00</div>
 
   </div>
-  
- <button onclick="myfunction()" id="bt1">ok</button>
+
+  <!--<div id="ps" onclick="myvolta()"><</div>
+  <div id="ps1">></div>-->
   
 
-  <div class="pr">
-    
-    
+ <!--<button onclick="myfunction()" id="bt1">ok</button-->
+ 
+
+  <!--<div class="pr">
 
     <div>
 
@@ -194,17 +223,14 @@
 
     </div>
       
-  
-  </div>
-  
+  </div>-->
+   <!--roda per-->
   <footer>
 
   </footer>
-  <script src="index0.js"></script>
-  <script src="/index.js/analisso_de_dados.js"></script>
-  <script src="index.js/dados_numerico.js"></script>
-  
-  <script src="grafico.js"></script>
+  <script src="butao.js"></script>
+ <script src="js/video_jn.js"></script>
+ <script src="ts.js"></script>
 
   
 </body>

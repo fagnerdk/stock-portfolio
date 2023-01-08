@@ -1,3 +1,5 @@
+
+
 /*nav*/
 nav{
     background-color: rgb(99, 42, 165);
@@ -7,26 +9,28 @@ nav{
     margin-left: -6px;
 }
 .titulo{
-   /*background-color: darkgrey;*/
-    color: beige;
-    margin-top: 90px;
-   text-align: center ;
-   font-size: 20px;
-    width: 200px;
-    height: 45px;
-    border-radius: 20px;
-}
-#contenia1-pesquiça{
-    margin-top: -50px;
-    margin-left: 400px;
-    padding: 8px;
-    width: 150px;
-    background-color: rgba(196, 214, 214, 0.397);
-    border-radius: 3px;
-}
+    /*background-color: darkgrey;*/
+     color: beige;
+     margin-top: 90px;
+    text-align: center ;
+    font-size: 20px;
+     width: 200px;
+     height: 45px;
+     border-radius: 20px;
+ }
+ #contenia1-pesquiça{
+     margin-top: -50px;
+     margin-left: 400px;
+     padding: 8px;
+     width: 150px;
+     background-color: rgba(196, 214, 214, 0.397);
+     border-radius: 3px;
+ }
+
 #bt0{
     border: papayawhip;
     border-radius: .3rem;
+    cursor: pointer;
 }
 #pesquisar{
     text-align: center;
@@ -44,21 +48,51 @@ table{
     width: 695px;
     margin-left: -6px;
 }
+/*grafico*/
 #lp{ 
-    background-color: rgb(255, 0, 128);
+    background-color: rgb(191, 191, 194);
     /*border: 1px solid black; */
-    margin-top: -260px;
-    margin-left: 689px;
+    margin-top: -285px;
+    margin-left: 690px;
     height: 482px;
-    width: 641px;
+    width: 559px;
     text-align: left -182px;
 }
-.pr{
-    background-color: rgb(153, 0, 255);
-    margin-top: -406px;
-    margin-left: 689px;
-    width: 180px;
-    height: 44px;
+#ps{
+background-color: #f0ecf5;
+border-radius: 5px;
+margin-top: -150px;
+margin-left: 692px;
+width: 40px;
+text-align: center;
+
+}
+#ps1{
+    background-color: #f0ecf5;
+    border-radius: 5px;
+   margin-top: -20px;
+    margin-left: 1212px;
+    width: 40px;
+    text-align: center;
+}
+#ps:hover{
+    background-color: dimgray;
+    cursor: pointer;
+}
+#ps1:hover{
+    background-color: dimgray;
+    cursor: pointer;
+}
+/*video*/
+#if{
+    background-color: #632AA5;
+ /*  margin-top: 20px;*/
+  /* margin-left: 46px;*/
+   margin-top: -210px;
+   margin-left: 689px;
+   height: 482px;
+   width: 621px;
+   border: rgb(19, 16, 16);
 }
 #disponivel{
     margin: 5px;
@@ -68,7 +102,7 @@ table{
     background-color: aqua;
     border: 1px solid rgb(22, 24, 23); 
     margin-left: -5px;
-    margin-top: -222px;
+    margin-top: -196px;
     height: 180px;
     width: 324px;
 }
@@ -112,7 +146,7 @@ table{
     background-color: rgb(236, 224, 53);
 } 
 .qld{
-    background-color: fuchsia;
+    background-color: rgb(55, 0, 255);
 }
 .dive{
     background-color: brown;
@@ -144,6 +178,22 @@ input{
     margin-top: 5px;
     margin-left: 640px;
 }
+#bts{
+    background-color: rgb(253, 253, 253);
+    border: #eee;
+    width: 40px;
+    cursor: pointer;
+}
+#btss{
+   background-color: green;
+    width: 40px;
+    cursor: pointer;
+}
+#btss:hover{
+    background-color: #632AA5;
+    
+}
+
 #dividendo{
     margin-left: .50rem;
     margin-top: .50rem;
