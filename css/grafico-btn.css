@@ -41,7 +41,15 @@
     width: 466px;
     height: 435px
 }
+.grafico{
+ /*background-color: rgb(153, 0, 255);*/
+    margin-top: -435px;
+    margin-left: 5.8rem;
+    width: 469px;
+    height: 435px;
+}
 #myChart{
-    width: 106px;
-    height: 425px;
+   /* background-color: rgb(170, 100, 13);*/
+    width: 10px;
+    height: 434px;
 }

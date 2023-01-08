@@ -168,7 +168,7 @@ function my10(w){
       
       Plotly.newPlot("myChart", data, layout);
       
-    };grafico()
+    };
 
 /*setInterval(()=>{
     console.log(bb(8,30))
