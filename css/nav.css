@@ -1,3 +1,39 @@
+nav{
+    background-color: rgb(99, 42, 165);
+    color: aliceblue; 
+    padding: 20px;
+    width: 1224px;
+    margin-top: -90px;
+    margin-left: -6px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('');
+  
+}
+#contenia1-pesquiça{
+    margin-top: -60px;
+    margin-left: 400px;
+    padding: 15px;
+    width: 180px;
+    background-color: rgba(196, 214, 214, 0.397);
+    border-radius: 3px;
+}
+#bt0{
+    background-color: aliceblue;
+   margin-top: -20px;
+   margin-left: 157px;
+   border: papayawhip;
+   border-radius: .3rem;
+   cursor: pointer;
+}
+#bt0:hover{
+    background-color: rgb(165, 159, 153);
+}
+#pes{
+   /* background-color: rgb(51, 255, 0);
+    height: 2px;*/
+    margin-left: -10px;
+}
 #foto_cap{
     background-color: beige;
     height: 60px;
@@ -9,4 +45,16 @@
     background-position: center;
     background-size: cover;
     background-image: url('https://scontent.ffor28-1.fna.fbcdn.net/v/t39.30808-6/294008271_358744459749214_3882484726730132069_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=9D59AZjKdOUAX-UJYcE&_nc_oc=AQnr_7gao70mc4nJmQX6sxk40e8G14O1dJ7XZBSz7ttzMAB6crModP3ors9iwxANrEg8ilvtgIqyZm91YtFHAIFY&_nc_ht=scontent.ffor28-1.fna&oh=00_AfDm0S8NyIqBq0xgRy2Aw3ry6sOmA3KoihjHrpV5JfJdUw&oe=63C02CF4');
+}
+.catera{
+    /*background-color: azure;*/
+    color: #000;
+    width: 50px;
+    height: 20px;
+    margin-left: 1100px;
+    margin-top: -30px;
+   
+  
+}   
+#catera0,#catera1{
 }

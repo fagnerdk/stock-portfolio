@@ -91,5 +91,6 @@
   "bugs": {
     "url": "https://github.com/fagnerdk/stock-portfolio/issues"
   },
-  "homepage": "https://github.com/fagnerdk/stock-portfolio#readme"
+  "homepage": "https://github.com/fagnerdk/stock-portfolio#readme",
+  "devDependencies": {}
 }

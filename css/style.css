@@ -1,13 +1,7 @@
 
 
 /*nav*/
-nav{
-    background-color: rgb(99, 42, 165);
-    color: aliceblue; 
-    padding: 20px;
-    margin-top: -90px;
-    margin-left: -6px;
-}
+
 .titulo{
     /*background-color: darkgrey;*/
      color: beige;
@@ -17,22 +11,9 @@ nav{
      width: 200px;
      height: 45px;
      border-radius: 20px;
- }
- #contenia1-pesquiça{
-     margin-top: -50px;
-     margin-left: 400px;
-     padding: 8px;
-     width: 150px;
-     background-color: rgba(196, 214, 214, 0.397);
-     border-radius: 3px;
- }
-
-#bt0{
-    border: papayawhip;
-    border-radius: .3rem;
-    cursor: pointer;
 }
 #pesquisar{
+   /*background-color: #a52a3f;*/
     text-align: center;
     border-radius: 30px;
     width: 115px;
@@ -55,7 +36,7 @@ table{
     margin-top: -285px;
     margin-left: 690px;
     height: 482px;
-    width: 559px;
+    width: 569px;
     text-align: left -182px;
 }
 #ps{
@@ -236,9 +217,10 @@ input{
 }
 footer{
     background-color:#632AA5 ;
-    margin-top: 500px;
+    margin-top: -00px;
     margin-left: -8px;
   padding: 40px;
+  width: 1188px;
 }
 .dt1{
     margin-left: 90px;

@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stock portfolio</title>
+    
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/masge.css">
     <link rel="stylesheet" href="css/grafico-btn.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+       <!--favico a baixo-->
+   
 </head>
-<body >
+<body  ononline="onFunction()" onoffline="offFunction()">
     
    <!--cabessa-->
     <nav class="tl">
      
-     <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div>
+     <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div><!--titulo de carpa-->
 
       <div id="contenia1-pesquiça">
-        <label for="pesquisar"></label>
-        <input type="url" name="" id="pesquisar">
-        <button onclick="mybt()" id="bt0">ok</button>
+        <label for="pesquisar" id="pes">açoes</label>
+        <input type="url" name="" id="pesquisar"><br>
+         <div onclick="mybt()"id="bt0"><i>&#128269;</i></div>
       </div>
-       <div id="foto_cap" ><img id="foto_cap" src=""></div>
+      <div class="catera">
+       <div id="catera0"><i>catera</i></div>
+         <div id="catera1">300</div>
+      </div>
+      <div id="foto_cap" ><img src=""></div><!--foto de carpa-->
+     
+
     </nav>
  <!--corpoo-->
   <div class="contenia">
 
-    <form action="" method="post">
+    <form action="" method="post"><!--fomulario-->
      <table >
         <tr>
           <th class="data" id="bts"></th>
-          <th class="data">Data <input type="date" name="mydata" id="mydata" ></th>
-          <th class="pl">PL<input type="text" name="mynome"id='mynome'></th>
-          <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th>
+          <th class="data">Data <input type="date" name="mydata" id="mydata" ></th><!--input data-->
+          <th class="pl">PL<input type="text" name="mynome"id='mynome'></th><!--input nomes dois papeis-->
+          <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th><!--input quantidade de corta-->
     </form>      
           <th class="dive">Dividend</th>
           <th class="rs">R$ divide</th>
@@ -184,14 +194,14 @@
     <form action="" method="post">
 
      <div id="dividendo">
-        <label for="number">meis</label>
-        <input type="number" name="" id="#" min="0" >
+        <label for="meis">meis</label>
+        <input type="number" name="" id="meis" min="0" >
      </div>
        <div class="valo-dv"><div  id="valo-dv">f</div></div>
 
      <div id="ano">
-        <label for="number">meis</label>
-        <input type="number" name="" id="#" min="0">
+        <label for="ano">ano</label>
+        <input type="number" name="" id="ano" min="0">
      </div>
        <div class=""><p id="ano1">89</p></div>
        <label for="" id="total">total</label>
@@ -213,30 +223,40 @@
     <div id="menos_soma">0,00</div>
 
   </div>
-
-  <!--<div id="ps" onclick="myvolta()"><</div>
-  <div id="ps1">></div>-->
-  
-
- <!--<button onclick="myfunction()" id="bt1">ok</button-->
- 
-
-  <!--<div class="pr">
-
-    <div>
-
-      <label for="number" id="disponivel">valo diponivel <input type="number" name="" id="myvalo" min="0" ></label>
+  <!--caixa_masagem-->
+  <div id="masage1">
+    
+    <div id="quadrado">
+      <div id="foto_msg" ><img src=""></div><!--foto de carpa-->
+    <div id="lane"></div>
 
     </div>
-      
-  </div>-->
-   <!--roda per-->
+     <!--mesagem-->
+    <div id="caixa_msg" >
+      <div id="msg">ooo</div>
+    </div>
+   <!--<form action="">-->
+      <div id="viu">
+        <br>
+        <label for="testo1" class="l_msg">mensagem</label>
+        <input type="text" name="envia" id="testo1">
+        <button onclick="mymsg()">ok</button>
+        <button type="reset">delete</button>
+
+      </div>
+   <!--</form>-->
+  </div> 
+  
+   
+ <!--roda per-->
   <footer>
 
   </footer>
+  <script src="js/msagem.js"></script>
   <script src="butao.js"></script>
  <script src="js/video_jn.js"></script>
- <script src="ts.js"></script>
+ <script src="cotaçao.js"></script>
+ <script src="js/online.js"></script>
 
   
 </body>
