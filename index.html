@@ -168,11 +168,12 @@
  <div id="lp">
    <div id="n">
     <br>
-    <div id="vn" >2,64</div>
-    <div id="vn1">2,64</div>
+    <div id="vn" ><div id="btc">BTC</div></div>
+    <div id="vn1">Ibovespa</div>
 
   </div>
 
+   <!--caixa com noticias-->
    <div id="bt_gra">
       <div id="jonal"><h1 style="font-size: 20px;">noticias</h1></div>
       <div onclick="myvolta()" class="jn1"> JN NEWS</div>
@@ -239,14 +240,15 @@
       <div id="viu">
         <br>
         <label for="testo1" class="l_msg">mensagem</label>
-        <input type="text" name="envia" id="testo1">
+        <input type="text" name="envia" id="testo1" >
         <button onclick="mymsg()">ok</button>
-        <button type="reset">delete</button>
+        <button id="01" onclick="mydelete()">delete</button>
+       
 
       </div>
    <!--</form>-->
   </div> 
-  
+ 
    
  <!--roda per-->
   <footer>
@@ -257,6 +259,5 @@
  <script src="js/video_jn.js"></script>
  <script src="cotaçao.js"></script>
  <script src="js/online.js"></script>
-
   
 </body>

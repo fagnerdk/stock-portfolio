@@ -32,28 +32,30 @@
     background-color: aquamarine;
 }
 #vn{
-    color: rgb(10, 14, 17);
-    background-color: rgb(251, 255, 0); 
+    color: rgb(244, 245, 247);
+   /* background-color: rgb(255, 0, 255); */
     height: 20px;
-    width: 35px;
-    margin-left: 10px;
+    width: 120px;
+    margin-left: -0px;
     text-align: center;
    margin-top: -6px;
    position: relative;
    animation-delay: 500s;
    animation: mymove 10s infinite;
+   font-size: 20px;
 }
 #vn1{
-    color: rgb(10, 14, 17);
-    background-color: rgb(255, 0, 0); 
+    color: rgb(244, 245, 247);
+   /* background-color: rgb(255, 0, 0);*/ 
     height: 20px;
-    width: 35px;
-    margin-left: 50px;
+    width: 120px;
+    margin-left: 123px;
     margin-top: -20px;
     text-align: center;
     position: relative;
     animation-delay: 500s;
     animation: mymove 10s infinite;
+    font-size: 20px;
 }
 #vn,#vn1{animation-timing-function: linear;}
 @keyframes mymove {
