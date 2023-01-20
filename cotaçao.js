@@ -8,5 +8,6 @@ async function getText(file) {
   let myText = await myObject.json();
   btc = myText.BTCBRL['code']
   valo = myText.BTCBRL['timestamp']
-  document.getElementById("btc").innerHTML = btc +":"+valo;
+ var x= document.getElementById("btc").innerHTML = btc +":"+valo;
+  console.log(btc)
 }
