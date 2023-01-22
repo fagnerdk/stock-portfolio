@@ -7,21 +7,10 @@
   <title>Document</title>
 </head>
 <body>
+  <input type="text" name="cep2" id="cep2">
+  <button onclick="mycep1()">busca</button>
   <p id="mo">Fetch a file to change this text.</p>
-
-<script>
-const moedas='BTC-BRL';
-
-getText(`https://economia.awesomeapi.com.br/json/last/${moedas}`);
-
-
-async function getText(file) {
-  let myObject = await fetch(file);
-  let myText = await myObject.json();
-  v = myText.BTCBRL['timestamp']
-  document.getElementById("mo").innerHTML = v;
-}
-</script>
-</script>
+   <h1 id="v"></h1>
+<script src="teste.js"></script>
 </body>
 </html>
