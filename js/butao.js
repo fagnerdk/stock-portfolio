@@ -21,7 +21,7 @@ var valo_ct = ['corta0',"corta1","corta2","corta3","corta4","corta5","corta6","c
  
  //buta//
  
-function my1(n){
+function my1(){
     var but1 = document.getElementById('mydata').value ;// iputr data
     document.getElementById('data1').innerHTML=but1;   // id data
     var papeis = document.getElementById("mynumber").value;// quantidade de papel
@@ -31,7 +31,7 @@ function my1(n){
    document.getElementById("qtd1").innerHTML= papeis//valo da corta
    const nomer_pl = document.getElementById("mynome").value; // nomer dos papeis 
    
-   return document.getElementById("pl1").innerHTML = nomer_pl;  // nomer dos papeis
+    document.getElementById("pl1").innerHTML = nomer_pl;  // nomer dos papeis
    
 };
 function my2(){
@@ -150,12 +150,12 @@ function my10(w){
 /*gafico esta abaixo*/ 
 
 
-
+    console.log(my1)
 
 
     function grafico(){
   
-        var nome1 = [  my1(),"nn", "Spain", "USA", "Argentina"];
+        var nome1 = [ 'kare',"nn", "Spain", "USA", "Argentina"];
       var yArray = [11, 49, 44, 24, 15];
       
       var data = [{
