@@ -1,6 +1,4 @@
-
 function mybt(){
-    
     var pesquisa = document.getElementById("pesquisar").value;//barra de pesquisa
    document.getElementById("cs").innerText = pesquisa;//barra de pesquisa
     
@@ -30,8 +28,7 @@ function my1(){
    document.getElementById("pvl0").innerHTML = papeis*valo_ct[0];
    document.getElementById("qtd1").innerHTML= papeis//valo da corta
    const nomer_pl = document.getElementById("mynome").value; // nomer dos papeis 
-   
-    document.getElementById("pl1").innerHTML = nomer_pl;  // nomer dos papeis
+   document.getElementById("pl1").innerHTML = nomer_pl;  // nomer dos papeis 
    
 };
 function my2(){
@@ -150,9 +147,6 @@ function my10(w){
 /*gafico esta abaixo*/ 
 
 
-    console.log(my1)
-
-
     function grafico(){
   
         var nome1 = [ 'kare',"nn", "Spain", "USA", "Argentina"];
@@ -167,8 +161,7 @@ function my10(w){
       var layout = {title:"World Wide Wine Production"};
       
       Plotly.newPlot("myChart", data, layout);
-      
-    };
+};
 
 /*setInterval(()=>{
     console.log(bb(8,30))

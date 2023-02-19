@@ -19,15 +19,16 @@ nav{
     border-radius: 3px;
 }
 #bt0{
-    background-color: aliceblue;
+   /* background-color: aliceblue;*/
    margin-top: -20px;
    margin-left: 157px;
    border: papayawhip;
    border-radius: .3rem;
    cursor: pointer;
+  
 }
 #bt0:hover{
-    background-color: rgb(165, 159, 153);
+   /* background-color: rgb(165, 159, 153);*/
 }
 #pes{
    /* background-color: rgb(51, 255, 0);

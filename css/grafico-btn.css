@@ -75,7 +75,7 @@
     height: 435px
 }
 .grafico{
- /*background-color: rgb(153, 0, 255);*/
+ /*background-color: hwb(305 0% 0%) 0% 0%);*/
     margin-top: -435px;
     margin-left: 5.8rem;
     width: 469px;
@@ -85,4 +85,13 @@
    /* background-color: rgb(170, 100, 13);*/
     width: 10px;
     height: 434px;
+}
+.tradingview-widget-container{
+    margin-top: -385px;
+    margin-left: 528px;
+   
+}
+#tradingview_d3bb1{
+    width: 731px;
+    height: 388px;
 }

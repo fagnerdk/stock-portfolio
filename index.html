@@ -20,12 +20,16 @@
     <nav class="tl">
      
      <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div><!--titulo de carpa-->
-
+      
       <div id="contenia1-pesquiça">
+      <form action="processa.php" method="post">
         <label for="pesquisar" id="pes">açoes</label>
-        <input type="url" name="" id="pesquisar"><br>
-         <div onclick="mybt()"id="bt0"><i>&#128269;</i></div>
+        <input type="url" name="pesquisa" id="pesquisar"><br>
+        <div onclick="mybt()" id="bt0"><input type="submit" value="🔍" style="width: 25px;height: 25px; border-radius: .4rem;border: solid 1px blanchedalmond;"></div>
+        <!--div onclick="mybt()" id="bt0"><i>🔍</i></div-->
+      </form>   
       </div>
+      
       <div class="catera">
        <div id="catera0"><i>catera</i></div>
          <div id="catera1">300</div>
@@ -41,9 +45,10 @@
      <table >
         <tr>
           <th class="data" id="bts"></th>
-          <th class="data">Data <input type="date" name="mydata" id="mydata" ></th><!--input data-->
+          <th class="data">Data <input type="date" name="mydate" id="mydata" ></th><!--input data-->
           <th class="pl">PL<input type="text" name="mynome"id='mynome'></th><!--input nomes dois papeis-->
           <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th><!--input quantidade de corta-->
+    
     </form>      
           <th class="dive">Dividend</th>
           <th class="rs">R$ divide</th>
@@ -183,6 +188,7 @@
 
    <div class="video"><iframe src="" class="yuo_tube" id="yuo_tube" frameborder="0"></iframe></div>
    <div class="grafico"><div id="myChart" style="width:100%;max-width:700px"></div></div>
+   
   </div>
  
    <!--caixa azul-->
@@ -248,8 +254,7 @@
       </div>
    <!--</form>-->
   </div> 
- 
-   
+
  <!--roda per-->
   <footer>
 
