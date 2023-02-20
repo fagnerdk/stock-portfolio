@@ -22,7 +22,7 @@
      <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div><!--titulo de carpa-->
       
       <div id="contenia1-pesquiça">
-      <form action="processa.php" method="post">
+      <form action="php/processa.php" method="post">
         <label for="pesquisar" id="pes">açoes</label>
         <input type="url" name="pesquisa" id="pesquisar"><br>
         <div onclick="mybt()" id="bt0"><input type="submit" value="🔍" style="width: 25px;height: 25px; border-radius: .4rem;border: solid 1px blanchedalmond;"></div>
@@ -41,15 +41,15 @@
  <!--corpoo-->
   <div class="contenia">
 
-    <form action="" method="post"><!--fomulario-->
+    <form action="php/resgistro.php" method="post"><!--fomulario-->
      <table >
         <tr>
           <th class="data" id="bts"></th>
           <th class="data">Data <input type="date" name="mydate" id="mydata" ></th><!--input data-->
           <th class="pl">PL<input type="text" name="mynome"id='mynome'></th><!--input nomes dois papeis-->
           <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th><!--input quantidade de corta-->
-    
-    </form>      
+       
+          
           <th class="dive">Dividend</th>
           <th class="rs">R$ divide</th>
           <th class="dy">D YIELD</th>
@@ -57,7 +57,7 @@
           <th class="fi" >Finaceiro</th>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my1()">1</td>
+          <td class="data" id="btss" onclick="my1()"><input type="submit" value="1" style="background-color: darkgreen;"></td>
           <td class="data" id="data1"></td>
           <td class="pl" id="pl1"></td>
           <td class="qld" id="qtd1"></td>
@@ -167,6 +167,7 @@
           <td class="fi" id="pvl9">0</td>
         </tr>
       </table>
+    </form>
 </div>
  
  <!--grafico-->
