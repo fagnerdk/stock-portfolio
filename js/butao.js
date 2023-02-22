@@ -29,7 +29,8 @@ function my1(){
    document.getElementById("qtd1").innerHTML= papeis//valo da corta
    const nomer_pl = document.getElementById("mynome").value; // nomer dos papeis 
    document.getElementById("pl1").innerHTML = nomer_pl;  // nomer dos papeis 
-   
+  
+ 
 };
 function my2(){
     var but2 = document.getElementById('mydata').value ;

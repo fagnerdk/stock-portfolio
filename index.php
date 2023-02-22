@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,7 +42,7 @@
  <!--corpoo-->
   <div class="contenia">
 
-    <form action="php/resgistro.php" method="post"><!--fomulario-->
+    <form action="resgistro.php" method="post"><!--fomulario-->
      <table >
         <tr>
           <th class="data" id="bts"></th>
@@ -57,7 +58,7 @@
           <th class="fi" >Finaceiro</th>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my1()"><input type="submit" value="1" style="background-color: darkgreen;"></td>
+          <td class="data" ><button type="submit" onclick="my1()" id="btss">1</button></td>
           <td class="data" id="data1"></td>
           <td class="pl" id="pl1"></td>
           <td class="qld" id="qtd1"></td>
@@ -68,7 +69,7 @@
           <td class="fi" id="pvl0" >0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my2()">2</td>
+          <td class="data"><button type="submit" onclick="my2()" id="btss">2</button></td>
           <td class="data" id="data2"></td>
           <td class="pl" id="pl2"></td>
           <td class="qld" id="qtd2"></td>
@@ -79,7 +80,7 @@
           <td class="fi" id="pvl1">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my3()">3</td>
+          <td class="data"><button type="submit" onclick="my3()" id="btss">3</button></td>
           <td class="data" id="data3"></td>
           <td class="pl" id="pl3"></td>
           <td class="qld" id="qtd3"></td>
@@ -90,7 +91,7 @@
           <td class="fi" id="pvl2">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my4()">4</td>
+          <td class="data" ><button type="submit" onclick="my4()" id="btss">4</button></td>
           <td class="data" id="data4"></td>
           <td class="pl" id="pl4"></td>
           <td class="qld" id="qtd4"></td>
@@ -101,7 +102,7 @@
           <td class="fi" id="pvl3">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my5()">5</td>
+          <td class="data"><button type="submit" onclick="my5()" id="btss">5</button></td>
           <td class="data" id="data5"></td>
           <td class="pl"  id="pl5"></td>
           <td class="qld" id="qtd5"></td>
@@ -112,7 +113,7 @@
           <td class="fi" id="pvl4">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my6()">6</td>
+          <td class="data"><button type="submit" onclick="my6()" id="btss">6</button></td>
           <td class="data" id="data6"></td>
           <td class="pl" id="pl6"></td>
           <td class="qld" id="qtd6"></td>
@@ -123,7 +124,7 @@
           <td class="fi" id="pvl5">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my7()">7</td>
+          <td class="data"><button type="submit" onclick="my7()" id="btss">7</button></td>
           <td class="data" id="data7"></td>
           <td class="pl" id="pl7"></td>
           <td class="qld" id="qtd7"></td>
@@ -134,7 +135,7 @@
           <td class="fi" id="pvl6">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my8()">8</td>
+          <td class="data"><button type="submit" onclick="my8()" id="btss">8</button></td>
           <td class="data" id="data8"></td>      
           <td class="pl" id="pl8"></td>
           <td class="qld" id="qtd8"></td>
@@ -145,7 +146,7 @@
           <td class="fi" id="pvl7">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my9()">9</td>
+          <td class="data"><button type="submit" onclick="my9()" id="btss">9</button></td>
           <td class="data" id="data9"></td>
           <td class="pl" id="pl9"></td>
           <td class="qld" id="qtd9"></td>
@@ -156,7 +157,7 @@
           <td class="fi" id="pvl8">0</td>
         </tr>
         <tr>
-          <td class="data" id="btss" onclick="my10()">10</td>
+          <td class="data"><button type="submit" onclick="my10()" id="btss">10</button></td>
           <td class="data" id="data10"></td>
           <td class="pl" id="pl10"></td>
           <td class="qld" id="qtd10"></td>

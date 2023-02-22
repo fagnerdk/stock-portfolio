@@ -1,7 +1,4 @@
 
-
-/*nav*/
-
 .titulo{
     /*background-color: darkgrey;*/
      color: beige;
@@ -33,7 +30,7 @@ table{
 #lp{ 
     background-color: rgb(191, 191, 194);
     /*border: 1px solid black; */
-    margin-top: -285px;
+    margin-top: -315px;
     margin-left: 690px;
     height: 482px;
     width: 569px;
@@ -83,7 +80,7 @@ text-align: center;
     background-color: aqua;
     border: 1px solid rgb(22, 24, 23); 
     margin-left: -5px;
-    margin-top: -196px;
+    margin-top: -166px;
     height: 180px;
     width: 324px;
 }
@@ -166,7 +163,7 @@ input{
     cursor: pointer;
 }
 #btss{
-   background-color: green;
+   background-color:green;
     width: 40px;
     cursor: pointer;
 }
