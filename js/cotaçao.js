@@ -1,4 +1,4 @@
-/// uma api
+// uma api
 const moedas='BTC-BRL';
   
 getText(`https://economia.awesomeapi.com.br/json/last/${moedas}`);
@@ -13,3 +13,6 @@ async function getText(file) {
     document.getElementById("btc").innerHTML = btc +" : "+valo;
    
 }
+
+
+ 

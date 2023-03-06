@@ -152,7 +152,7 @@ lina.fillRect(225, deminu(125,valo), 20, valo);// lagura tamanho ou distacia*/
     c4.style.width=''
   }
 })*/
-function toq(){
+/*function toq(){
   document.body.addEventListener('keyup',(Event)=>{
     console.log(Event.code)
     if(Event.code==='ArrowLeft'){
@@ -184,4 +184,16 @@ function toq(){
       c4.style.width=''
     }
   })
-}toq()
+}toq()*/
+
+var a ='kaio';
+
+switch (a) {
+  case 'kaio':
+    document.write('ok')
+    break;
+  case 1:
+   document.write('nao')
+  break
+  
+}
