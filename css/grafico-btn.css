@@ -60,7 +60,7 @@
 #vn,#vn1{animation-timing-function: linear;}
 @keyframes mymove {
   from {left: -10px;}
-  to {left: 470px;}
+  to {left: 433px;}
 }
 .video{
    /* background-color: rgb(153, 0, 255);*/
@@ -71,14 +71,14 @@
 }
 .yuo_tube{
     /*background-color: rgb(255, 0, 43);*/
-    width: 466px;
+    width: 550px;
     height: 435px
 }
 .grafico{
- /*background-color: hwb(305 0% 0%) 0% 0%);*/
+   /* background-color: blue;*/
     margin-top: -435px;
     margin-left: 5.8rem;
-    width: 469px;
+    width: 550px;
     height: 435px;
 }
 #myChart{
