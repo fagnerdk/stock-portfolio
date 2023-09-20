@@ -1,5 +1,5 @@
 
-  /*if("online"){
+  if("online"){
      function onFunction() {
 
           var a= document.getElementById("lane");
@@ -18,7 +18,7 @@
      
      offFunction()  
   }
-  */
+  /*
  
 function onFunction() {
 
@@ -37,4 +37,4 @@ function offFunction() {
 offFunction() 
  
    console.log(onFunction()+" "+offFunction())
-  
+  */
