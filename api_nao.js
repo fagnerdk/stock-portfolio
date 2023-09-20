@@ -1,7 +1,7 @@
 
 /*ateçao esta api nao pode ser usado nua pasta dar erro*/
 
-const request=require('request');
+const request = require('request');
 
 const moedas='BTC-BRL';
 const Options = {
