@@ -3,239 +3,259 @@ session_start();
 ?-->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stock portfolio</title>
-    
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/masge.css">
-    <link rel="stylesheet" href="css/grafico-btn.css">
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-       <!--favico a baixo-->
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stock portfolio</title>
+
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/masge.css">
+  <link rel="stylesheet" href="css/grafico-btn.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!--favico a baixo-->
+
 </head>
-<body  ononline="onFunction()" onoffline="offFunction()">
-    
-   <!--cabessa-->
-    <nav class="tl">
-     
-     <div class="titulo"><h1 id="titulo0">stock portfolio</h1></div><!--titulo de carpa-->
-      
-      <div id="contenia1-pesquiça">
+
+<body ononline="onFunction()" onoffline="offFunction()">
+
+  <!--cabessa-->
+  <nav class="tl">
+
+    <div class="titulo">
+      <h1 id="titulo0">stock portfolio</h1>
+    </div><!--titulo de carpa-->
+
+    <div id="contenia1-pesquiça">
       <form action="php/processa.php" method="post">
         <label for="pesquisar" id="pes">açoes</label>
         <input type="url" name="pesquisa" id="pesquisar"><br>
-        <div onclick="mybt()" id="bt0"><input type="submit" value="🔍" style="width: 25px;height: 25px; border-radius: .4rem;border: solid 1px blanchedalmond;"></div>
+        <div onclick="mybt()" id="bt0"><input type="submit" value="🔍"
+            style="width: 25px;height: 25px; border-radius: .4rem;border: solid 1px blanchedalmond;"></div>
         <!--div onclick="mybt()" id="bt0"><i>🔍</i></div-->
-      </form>   
-      </div>
-      
-      <div class="catera">
-       <div id="catera0"><i>catera</i></div>
-         <div id="catera1">300</div>
-      </div>
-      <div id="foto_cap" ><img src=""></div><!--foto de carpa-->
-     
+      </form>
+    </div>
 
-    </nav>
- <!--corpoo-->
+    <div class="catera">
+      <div id="catera0"><i>catera</i></div>
+      <div id="catera1">300</div>
+    </div>
+    <div id="foto_cap"><img src=""></div><!--foto de carpa-->
+
+
+  </nav>
+  <!--corpoo-->
   <div class="contenia">
 
-   <!-- <form action="resgistro.php" method="post">     fomulario-->
-     <table >
-        <tr>
-          <th class="data" id="bts">
-            <!--?php
+    <!-- <form action="resgistro.php" method="post">     fomulario-->
+    <table>
+      <tr>
+        <th class="data" id="bts">
+          <!--?php
             if(isset($_SESSION['msg'])){
               echo $_SESSION['msg'];
               unset($_SESSION['msg']);
             }
-            ?--></th>
-          <th class="data">Data <input type="date" name="mydate" id="mydata" ></th><!--input data-->
-          <th class="pl">PL<input type="text" name="mynome"id='mynome'></th><!--input nomes dois papeis-->
-          <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th><!--input quantidade de corta-->
-       
-          
-          <th class="dive">Dividend</th>
-          <th class="rs">R$ divide</th>
-          <th class="dy">D YIELD</th>
-          <th class="vl">Valo da corta</th>
-          <th class="fi" >Finaceiro</th>
-        </tr>
-        <tr>
-          <td class="data" ><button type="submit" onclick="my1()" id="btss">1</button></td>
-          <td class="data" id="data1"></td>
-          <td class="pl" id="pl1"></td>
-          <td class="qld" id="qtd1"></td>
-          <td class="dive" id="dy">0,00</td>
-          <td class="rs" id="" >0,00</td>
-          <td class="dy" id="">1,45%</td>
-          <td class="vl"id="corta1">R$ 0,00</td>
-          <td class="fi" id="pvl0" >0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my2()" id="btss">2</button></td>
-          <td class="data" id="data2"></td>
-          <td class="pl" id="pl2"></td>
-          <td class="qld" id="qtd2"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta2">R$ 0,00</td>
-          <td class="fi" id="pvl1">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my3()" id="btss">3</button></td>
-          <td class="data" id="data3"></td>
-          <td class="pl" id="pl3"></td>
-          <td class="qld" id="qtd3"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta3">R$ 0,00</td>
-          <td class="fi" id="pvl2">0</td>
-        </tr>
-        <tr>
-          <td class="data" ><button type="submit" onclick="my4()" id="btss">4</button></td>
-          <td class="data" id="data4"></td>
-          <td class="pl" id="pl4"></td>
-          <td class="qld" id="qtd4"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta4">0</td>
-          <td class="fi" id="pvl3">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my5()" id="btss">5</button></td>
-          <td class="data" id="data5"></td>
-          <td class="pl"  id="pl5"></td>
-          <td class="qld" id="qtd5"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta5">R$ 0,00</td>
-          <td class="fi" id="pvl4">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my6()" id="btss">6</button></td>
-          <td class="data" id="data6"></td>
-          <td class="pl" id="pl6"></td>
-          <td class="qld" id="qtd6"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta6">R$ 0,00</td>
-          <td class="fi" id="pvl5">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my7()" id="btss">7</button></td>
-          <td class="data" id="data7"></td>
-          <td class="pl" id="pl7"></td>
-          <td class="qld" id="qtd7"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta7">R$ 0,00</td>
-          <td class="fi" id="pvl6">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my8()" id="btss">8</button></td>
-          <td class="data" id="data8"></td>      
-          <td class="pl" id="pl8"></td>
-          <td class="qld" id="qtd8"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta8">R$ 0,00</td>
-          <td class="fi" id="pvl7">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my9()" id="btss">9</button></td>
-          <td class="data" id="data9"></td>
-          <td class="pl" id="pl9"></td>
-          <td class="qld" id="qtd9"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta9">R$ 0,00</td>
-          <td class="fi" id="pvl8">0</td>
-        </tr>
-        <tr>
-          <td class="data"><button type="submit" onclick="my10()" id="btss">10</button></td>
-          <td class="data" id="data10"></td>
-          <td class="pl" id="pl10"></td>
-          <td class="qld" id="qtd10"></td>
-          <td class="dive">0,00</td>
-          <td class="rs">0,00</td>
-          <td class="dy">1,45%</td>
-          <td class="vl" id="corta10">R$ 0,00</td>
-          <td class="fi" id="pvl9">0</td>
-        </tr>
-      </table>
-   <!-- </form>-->
-</div>
- 
- <!--grafico-->
- <div id="lp">
-   <div id="n">
-    <br>
-    <div id="vn" ><div id="btc">BTC</div></div>
-    <div id="vn1">Ibovespa</div>
+            ?-->
+        </th>
+        <th class="data">Data <input type="date" name="mydate" id="mydata"></th><!--input data-->
+        <th class="pl">PL<input type="text" name="mynome" id='mynome'></th><!--input nomes dois papeis-->
+        <th class="qld">QTD <input type="number" name="mynumber" id="mynumber" min="0"></th>
+        <!--input quantidade de corta-->
+
+
+        <th class="dive">Dividend</th>
+        <th class="rs">R$ divide</th>
+        <th class="dy">D YIELD</th>
+        <th class="vl">Valo da corta</th>
+        <th class="fi">Finaceiro</th>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my1()" id="btss">1</button></td>
+        <td class="data" id="data1"></td>
+        <td class="pl" id="pl1"></td>
+        <td class="qld" id="qtd1"></td>
+        <td class="dive" id="dy">0,00</td>
+        <td class="rs" id="">0,00</td>
+        <td class="dy" id="">1,45%</td>
+        <td class="vl" id="corta1">R$ 0,00</td>
+        <td class="fi" id="pvl0">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my2()" id="btss">2</button></td>
+        <td class="data" id="data2"></td>
+        <td class="pl" id="pl2"></td>
+        <td class="qld" id="qtd2"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta2">R$ 0,00</td>
+        <td class="fi" id="pvl1">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my3()" id="btss">3</button></td>
+        <td class="data" id="data3"></td>
+        <td class="pl" id="pl3"></td>
+        <td class="qld" id="qtd3"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta3">R$ 0,00</td>
+        <td class="fi" id="pvl2">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my4()" id="btss">4</button></td>
+        <td class="data" id="data4"></td>
+        <td class="pl" id="pl4"></td>
+        <td class="qld" id="qtd4"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta4">0</td>
+        <td class="fi" id="pvl3">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my5()" id="btss">5</button></td>
+        <td class="data" id="data5"></td>
+        <td class="pl" id="pl5"></td>
+        <td class="qld" id="qtd5"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta5">R$ 0,00</td>
+        <td class="fi" id="pvl4">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my6()" id="btss">6</button></td>
+        <td class="data" id="data6"></td>
+        <td class="pl" id="pl6"></td>
+        <td class="qld" id="qtd6"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta6">R$ 0,00</td>
+        <td class="fi" id="pvl5">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my7()" id="btss">7</button></td>
+        <td class="data" id="data7"></td>
+        <td class="pl" id="pl7"></td>
+        <td class="qld" id="qtd7"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta7">R$ 0,00</td>
+        <td class="fi" id="pvl6">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my8()" id="btss">8</button></td>
+        <td class="data" id="data8"></td>
+        <td class="pl" id="pl8"></td>
+        <td class="qld" id="qtd8"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta8">R$ 0,00</td>
+        <td class="fi" id="pvl7">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my9()" id="btss">9</button></td>
+        <td class="data" id="data9"></td>
+        <td class="pl" id="pl9"></td>
+        <td class="qld" id="qtd9"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta9">R$ 0,00</td>
+        <td class="fi" id="pvl8">0</td>
+      </tr>
+      <tr>
+        <td class="data"><button type="submit" onclick="my10()" id="btss">10</button></td>
+        <td class="data" id="data10"></td>
+        <td class="pl" id="pl10"></td>
+        <td class="qld" id="qtd10"></td>
+        <td class="dive">0,00</td>
+        <td class="rs">0,00</td>
+        <td class="dy">1,45%</td>
+        <td class="vl" id="corta10">R$ 0,00</td>
+        <td class="fi" id="pvl9">0</td>
+      </tr>
+    </table>
+    <!-- </form>-->
+  </div>
+
+  <!--grafico-->
+  <div id="lp">
+    <div id="n">
+      <br>
+      <div id="vn">
+        <div id="btc">BTC</div>
+      </div>
+      <div id="vn1">Ibovespa</div>
+
+    </div>
+
+    <!--caixa com noticias-->
+    <div id="bt_gra">
+      <div id="jonal">
+        <h1 style="font-size: 20px;">noticias</h1>
+      </div>
+      <div id="jn1" onclick="myvolta()" class="jn1"> JN NEWS</div>
+      <div id="jn2" onclick=" Cultura()" class="jn2">JN Cultura</div>
+      <div id="grafico" class="jn2">grafico</div>
+
+
+    </div>
+
+    <div class="video"><iframe src="" class="yuo_tube" id="yuo_tube" frameborder="0"></iframe></div>
+    <div class="grafico">
+      <div id="myChart" style="width:100%;max-width:800px"></div>
+    </div>
 
   </div>
 
-   <!--caixa com noticias-->
-   <div id="bt_gra">
-      <div id="jonal"><h1 style="font-size: 20px;">noticias</h1></div>
-      <div onclick="myvolta()" class="jn1"> JN NEWS</div>
-      <div onclick=" Cultura()" class="jn2">JN Cultura</div>
-      <div id="grafico" class="jn2">grafico</div> 
-      <!--<div onclick="grafico()" class="jn2">grafico</div> -->  
-   </div>
-
-   <div class="video"><iframe src="" class="yuo_tube" id="yuo_tube" frameborder="0"></iframe></div>
-   <div class="grafico"><div id="myChart" style="width:100%;max-width:800px"></div></div>
-   
-  </div>
- 
-   <!--caixa azul-->
-  <div class="cs" >
+  <!--caixa azul-->
+  <div class="cs">
     <div id="cs"></div>
-    
+
   </div>
   <!--valores caixa-->
   <div class="ms">
     <form action="" method="post">
 
-     <div id="dividendo">
+      <div id="dividendo">
         <label for="meis">meis</label>
-        <input type="number" name="" id="meis" min="0" >
-     </div>
-       <div class="valo-dv"><div  id="valo-dv">f</div></div>
+        <input type="number" name="" id="meis" min="0">
+      </div>
+      <div class="valo-dv">
+        <div id="valo-dv">f</div>
+      </div>
 
-     <div id="ano">
+      <div id="ano">
         <label for="ano">ano</label>
         <input type="number" name="" id="ano" min="0">
-     </div>
-       <div class=""><p id="ano1">89</p></div>
-       <label for="" id="total">total</label>
-      <div class="#"><p id="final">8</p></div>
-     
+      </div>
+      <div class="">
+        <p id="ano1">89</p>
+      </div>
+      <label for="" id="total">total</label>
+      <div class="#">
+        <p id="final">8</p>
+      </div>
+
 
     </form>
   </div>
-    <!--caixa verde-->
+  <!--caixa verde-->
   <div class="cx">
-    
+
 
   </div>
-   <!--caixa preta somas dos valores-->
+  <!--caixa preta somas dos valores-->
   <div class="total">
-   
+
     <div id="soma_totau">0,00</div>
 
     <div id="menos_soma">0,00</div>
@@ -243,30 +263,30 @@ session_start();
   </div>
   <!--caixa_masagem-->
   <div id="masage1">
-    
+
     <div id="quadrado">
-      <div id="foto_msg" ><img src=""></div><!--foto de carpa-->
-    <div id="lane"></div>
+      <div id="foto_msg"><img src=""></div><!--foto de carpa-->
+      <div id="lane"></div>
 
     </div>
-     <!--mesagem-->
-    <div id="caixa_msg" >
+    <!--mesagem-->
+    <div id="caixa_msg">
       <div id="msg">ooo</div>
     </div>
-   <!--<form action="">-->
-      <div id="viu">
-        <br>
-        <label for="testo1" class="l_msg">mensagem</label>
-        <input type="text" name="envia" id="testo1" >
-        <button onclick="mymsg()">ok</button>
-        <button id="01" onclick="mydelete()">delete</button>
-       
+    <!--<form action="">-->
+    <div id="viu">
+      <br>
+      <label for="testo1" class="l_msg">mensagem</label>
+      <input type="text" name="envia" id="testo1">
+      <button onclick="mymsg()">ok</button>
+      <button id="01" onclick="mydelete()">delete</button>
 
-      </div>
-   <!--</form>-->
-  </div> 
 
- <!--roda per-->
+    </div>
+    <!--</form>-->
+  </div>
+
+  <!--roda per-->
   <footer>
 
   </footer>
@@ -276,6 +296,6 @@ session_start();
   <script src="js/cotaçao.js"></script>
   <script src="js/online.js"></script>
   <script src="./js/som.js"></script>
-  
- 
+
+
 </body>

@@ -1,16 +1,10 @@
-function myvolta(){
-    document.getElementById("yuo_tube").
-    src="https://www.youtube.com/embed/94ZTYbp4xBI" ;
-    
-  console.log('ok')
- var grafico= document.querySelector('[id="myChart"]');
- grafico.innerHTML='';
- }
- function Cultura(){
-     document.getElementById("yuo_tube").
-     src="https://www.youtube.com/embed/cTQb-GayqvU" ;
-     
-   console.log('ok')
-   var grafico= document.querySelector('[id="myChart"]');
- grafico.innerHTML='';
- };
+/*addEventListener("click", (vl) => {
+  if (vl.target.id == "jn1") {
+    document.getElementById("yuo_tube").src =
+      "https://www.youtube.com/embed/94ZTYbp4xBI";
+  } else if (vl.target.id == "jn2") {
+    document.getElementById("yuo_tube").src =
+      "https://www.youtube.com/embed/cTQb-GayqvU";
+  }
+});
+*/
