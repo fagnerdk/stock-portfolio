@@ -1,6 +1,6 @@
 
 /*ateçao esta api nao pode ser usado nua pasta dar erro*/
-
+/*
 const request = require('request');
 
 const moedas='BTC-BRL';
@@ -17,8 +17,9 @@ const cotaçoes= function(erro,res,body){
     let json= JSON.parse(body)
     btc =json.BTCBRL['code']
     valo = json.BTCBRL['bid']
-    console.log(json+''+'valo da cotaso'+' '+btc+" "+valo)
-    document.getElementById("mo").innerHTML = btc +" : "+valo;
+    valon = [...valo]
+  
+    document.getElementById("mo").innerHTML = btc +" : "+valon;
 }
 
 function gg(){
@@ -26,7 +27,7 @@ setInterval(() => {
     request(Options,cotaçoes)   
 }, 15000);
 
-}gg();
+}gg();*/
 
 
 
