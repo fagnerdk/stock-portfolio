@@ -1,6 +1,8 @@
+
 function mybt() {
   var pesquisa = document.getElementById("pesquisar").value; //barra de pesquisa
   document.getElementById("cs").innerText = pesquisa; //barra de pesquisa
+ 
 }
 
 var valo_ct = [
@@ -27,19 +29,23 @@ document.getElementById("corta8").innerHTML = valo_ct[7] = 8; //acresenta um rob
 document.getElementById("corta9").innerHTML = valo_ct[8] = 9; //acresenta um robo de cotaçao
 document.getElementById("corta10").innerHTML = valo_ct[9] = 10; //acresenta um robo de cotaçao
 
+
 //buta//
 
 function my1() {
   var but1 = document.getElementById("mydata").value; // iputr data
-  document.getElementById("data1").innerHTML = but1; // id data
+  const data1 = document.getElementById("data1").innerHTML = but1; // id data
   var papeis = document.getElementById("mynumber").value; // quantidade de papel
   //var tc= document.getElementById('coluna').innerHTML='menos'+" "+1;
   //document.getElementById("corta1").innerHTML=papeis*valo_ct[0];
   document.getElementById("pvl0").innerHTML = papeis * valo_ct[0];
   document.getElementById("qtd1").innerHTML = papeis; //valo da corta
   const nomer_pl = document.getElementById("mynome").value; // nomer dos papeis
-  document.getElementById("pl1").innerHTML = nomer_pl; // nomer dos papeis
+  document.getElementById("pl1").innerHTML =  nomer_pl; // nomer dos papeis
+  document.getElementById("mynumber").value = ''
+  document.getElementById("mynome").value =''
 }
+
 function my2() {
   var but2 = document.getElementById("mydata").value;
   document.getElementById("data2").innerHTML = but2;
@@ -52,6 +58,8 @@ function my2() {
   document.getElementById("pvl1").innerHTML = papeis * valo_ct[1];
   const nomer_pl2 = document.getElementById("mynome").value; // nomer dos papeis
   document.getElementById("pl2").innerHTML = nomer_pl2; // nomer dos papeis
+  document.getElementById("mynumber").value = ''
+  document.getElementById("mynome").value = ''
 }
 function my3() {
   var but3 = document.getElementById("mydata").value;
@@ -64,6 +72,9 @@ function my3() {
    console.log(tc);*/
   //document.getElementById("corta3").innerHTML=papeis*valo_ct[2];
   document.getElementById("pvl2").innerHTML = papeis * valo_ct[2];
+  document.getElementById("mynumber").value= ''
+  document.getElementById("mynome").value = ''
+
 }
 function my4() {
   var but4 = document.getElementById("mydata").value;
@@ -76,6 +87,8 @@ function my4() {
    console.log(tc);*/
   //document.getElementById("corta4").innerHTML=papeis*valo_ct[3];
   document.getElementById("pvl3").innerHTML = papeis * valo_ct[3];
+  document.getElementById("mynumber").value = ''
+  document.getElementById("mynome").value = ''
 }
 function my5() {
   var but5 = document.getElementById("mydata").value;
@@ -88,6 +101,8 @@ function my5() {
    console.log(tc);*/
   //document.getElementById("corta5").innerHTML=papeis*valo_ct[4];
   document.getElementById("pvl4").innerHTML = papeis * valo_ct[4];
+  document.getElementById("mynumber").value =''
+  document.getElementById("mynome").value =''
 }
 function my6() {
   var but6 = document.getElementById("mydata").value;
@@ -100,6 +115,8 @@ function my6() {
    console.log(tc);*/
   //document.getElementById("corta6").innerHTML=papeis*valo_ct[5];
   document.getElementById("pvl5").innerHTML = papeis * valo_ct[5];
+  document.getElementById("mynumber").value = ''
+  document.getElementById("mynome").value = ''
 }
 function my7() {
   var but7 = document.getElementById("mydata").value;
@@ -112,6 +129,9 @@ function my7() {
    console.log(tc);*/
   //document.getElementById("corta7").innerHTML=papeis*valo_ct[6];
   document.getElementById("pvl6").innerHTML = papeis * valo_ct[6];
+  document.getElementById("mynome").value = ''
+  document.getElementById("mynumber").value = ''
+
 }
 function my8() {
   var but8 = document.getElementById("mydata").value;
@@ -124,11 +144,14 @@ function my8() {
    console.log(tc);*/
   //document.getElementById("corta8").innerHTML=papeis*valo_ct[7];
   document.getElementById("pvl7").innerHTML = papeis * valo_ct[7];
+  document.getElementById("mynome").value = ''
+  document.getElementById("mynumber").value = ''
+
 }
 function my9() {
   var but9 = document.getElementById("mydata").value;
   document.getElementById("data9").innerHTML = but9;
-  const nomer_pl = document.getElementById("mynome").value; // nomer dos papeis
+  const nomer_pl =document.getElementById("mynome").value; // nomer dos papeis
   document.getElementById("pl9").innerHTML = nomer_pl; // nomer dos papeis
   var papeis = document.getElementById("mynumber").value; // quantidade de papel
   document.getElementById("qtd9").innerHTML = papeis; //valo da corta
@@ -136,6 +159,8 @@ function my9() {
    console.log(tc);*/
   //document.getElementById("corta9").innerHTML=papeis*valo_ct[8];
   document.getElementById("pvl8").innerHTML = papeis * valo_ct[8];
+  document.getElementById("mynome").value = ''
+  document.getElementById("mynumber").value = ''
 }
 function my10(w) {
   var but10 = document.getElementById("mydata").value;
@@ -148,5 +173,6 @@ function my10(w) {
    console.log(tc);*/
   //document.getElementById("corta10").innerHTML=papeis*valo_ct[9];
   document.getElementById("pvl9").innerHTML = papeis * valo_ct[9];
+  document.getElementById("mynome").value = ''
+  document.getElementById("mynumber").value = ''
 }
-
