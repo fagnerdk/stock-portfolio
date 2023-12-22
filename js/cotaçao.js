@@ -8,7 +8,9 @@ setInterval(() => {
   async function getText(file) {
     let myObject = await fetch(file);
     let myText = await myObject.json();
+    
     btc = myText.BTCBRL["code"];
+   
     valo = myText.BTCBRL["bid"];
     var valo1 = [...valo]
     console.log( valo1[0]+valo1[1]+valo1[3]);
