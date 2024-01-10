@@ -68,7 +68,7 @@ async function my1() {
   document.getElementById("mynome").value = ""; // lipa input
 
   document.getElementById("corta1").innerHTML = valo_ct[0] = cotaçao; // valo de mecado
-  document.getElementById("pvl0").innerHTML = papeis * cotaçao;
+  document.getElementById("pvl0").innerHTML = papeis * cotaçao
 }
 
 async function my2() {

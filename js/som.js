@@ -13,11 +13,10 @@ function resutado() {
   var vl7 = document.getElementById("pvl7").innerText;
   var vl8 = document.getElementById("pvl8").innerText;
   var vl9 = document.getElementById("pvl9").innerText;
-  /*var soma =Number(vl0)+Number(vl1)*/
-  document.getElementById("soma_totau").innerHTML =
-    "R$:" +
-    " " +
-    soma(
+ 
+  
+    
+    var res =soma(
       Number(vl0),
       Number(vl1),
       Number(vl2),
@@ -28,12 +27,14 @@ function resutado() {
       Number(vl7),
       Number(vl8),
       Number(vl9)
-    );
-  console.log(vl0);
-  console.log(vl1);
-  /* console.log(soma)*/
+    )
+    document.getElementById("soma_totau").innerHTML =
+    "R$:" +" " + res.toFixed(2);
+  
+ 
 }
 
 setInterval(() => {
   resutado();
 }, 1500);
+
