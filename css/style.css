@@ -139,6 +139,8 @@ text-align: center;
 }
 .fi{
     background-color: chartreuse;
+   
+ 
 }
 input{
     width: 50px;
@@ -237,6 +239,9 @@ footer{
     text-align: center;
     margin-left: 6px;
     
+  text-align: justify;
+  text-justify: inter-word;
+  width: 100px;
 }
 #menos_soma{
     color: rgb(255, 5, 5);

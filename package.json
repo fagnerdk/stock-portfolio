@@ -2,7 +2,7 @@
   "name": "stock-portfolio",
   "version": "1.0.0",
   "description": "catira",
-  "main": "index.js",
+  "main": "cosapi.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
     "agent-base": "^6.0.2",
