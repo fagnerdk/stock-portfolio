@@ -1,5 +1,5 @@
-// uma api
 
+//clipito moeda
 setInterval(() => {
   const moedas = "BTC-BRL";
 

@@ -39,6 +39,7 @@ var valo_ct = [
 ];
 valo_ct = ["", "", "", "", "", "", "", "", "", ""];
 
+
 //buta//
 
 async function my1() {
@@ -69,6 +70,7 @@ async function my1() {
 
   document.getElementById("corta1").innerHTML = valo_ct[0] = cotaçao; // valo de mecado
   document.getElementById("pvl0").innerHTML = papeis * cotaçao
+ 
 }
 
 async function my2() {

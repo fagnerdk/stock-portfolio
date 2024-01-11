@@ -1,6 +1,4 @@
-<!--?php
-session_start();
-?-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -43,7 +41,7 @@ session_start();
         <input type="" name="pesquisa" id="pesquisar"><br>
         <div onclick="mybt()" id="bt0"><input type="submit" value="🔍"
             style="width: 25px;height: 25px; border-radius: .4rem;border: solid 1px blanchedalmond;"></div>
-        <!--div onclick="mybt()" id="bt0"><i>🔍</i></div-->
+       
       
     </div>
 
@@ -51,23 +49,29 @@ session_start();
       <div id="catera0"><i>catera</i></div>
       <div id="catera1">300</div>
     </div>
-    <div id="foto_cap"><img src=""></div><!--foto de carpa-->
+      <!--
+      <form action="/" method="" id="">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="email">
+         <label for="senha">senha</label>
+         <input type="password" name="senha" id="senha" placeholder="senha">
+         <input type="submit" value="logar">
+      </form>
+      <p>cria conta</p>
+    -->
+    
+  <div id="foto_cap"><img src=""></div> <!--//foto de carpa-->
 
 
   </nav>
   <!--corpoo-->
   <div class="contenia">
 
-    <!-- <form action="resgistro.php" method="post">     fomulario-->
+   
     <table>
       <tr>
         <th class="data" id="bts">
-          <!--?php
-            if(isset($_SESSION['msg'])){
-              echo $_SESSION['msg'];
-              unset($_SESSION['msg']);
-            }
-            ?-->
+         
         </th>
         <th class="data">Data <input type="date" name="mydate" id="mydata"></th><!--input data-->
         <th class="pl">PL<input type="text" name="mynome" id='mynome'></th><!--input nomes dois papeis-->
@@ -88,7 +92,7 @@ session_start();
         <td class="qld" id="qtd1"></td>
         <td class="dive" id="dy">0,00</td>
         <td class="rs" id="">0,00</td>
-        <td class="dy" id="">1,45%</td>
+        <td class="dy" id="posen1">1,45%</td>
         <td class="vl" id="corta1">R$ 0,00</td>
         <td class="fi" id="pvl0">0</td>
       </tr>
@@ -303,7 +307,10 @@ session_start();
 
   <!--roda per-->
   <footer>
-
+      <p> <span class="bold">stock portfolio</span> &copy;2022</p>
+      <div id="contato">
+         <li><a href="mailto:fagnerwagner9@gmail.com" class="pgl" class="pgl">fagnerwagner9@gmail.com</a></li>
+      </div>
   </footer>
   <script src="js/msagem.js"></script>
   <script src="js/butao.js"></script>
@@ -313,5 +320,5 @@ session_start();
   <script src="./js/som.js"></script>
 
   <script src="./js/fs.js"></script>
-  
+  <script src="js/dy.js"></script>
 </body>

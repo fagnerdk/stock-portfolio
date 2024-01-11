@@ -220,6 +220,15 @@ footer{
   padding: 40px;
   width: 1258px;
 }
+p{
+    color: rgb(2, 4, 5);
+    margin-left: 600px;
+    margin-top: -20px;
+}
+a{
+    color: rgb(2, 4, 5);
+    text-decoration-line: none;
+}
 .dt1{
     margin-left: 90px;
 }

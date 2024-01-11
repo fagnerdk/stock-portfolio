@@ -47,6 +47,12 @@ nav{
     background-size: cover;
     background-image: url('/foto/258763062_576876326734584_4102132421659271278_n\(1\).jpg');
 }
+#log{
+    height: 60px;
+    width: 60px;
+    margin-top:-40px;
+    margin-left:1150px;
+}
 .catera{
   /*  background-color: azure;*/
     color: #000;
